@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Analyst Portfolio</title>
+  <meta name="description" content="Portfolio of a Data Analyst showcasing skills in Python, SQL, Power BI, Tableau, and data-driven projects.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="sticky-header" id="header">
+    <div class="header-container">
+      <a href="#about" class="brand-logo">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">Data<span class="accent-text">Analyst</span></span>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#about" class="nav-link active" data-i18n="nav_about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link" data-i18n="nav_experience">Work Experience</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Actions: Language Switcher & Mobile Toggle -->
+      <div class="header-actions">
+        <button class="lang-toggle-btn" id="lang-toggle" aria-label="Toggle language">
+          <i class="fa-solid fa-globe"></i>
+          <span class="lang-indicator">
+            <span class="lang-code en-code active">EN</span>
+            <span class="lang-divider">/</span>
+            <span class="lang-code es-code">ES</span>
+          </span>
+        </button>
+
+        <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="main-wrapper">
+
+    <!-- SECTION 1: ABOUT (Matches 1.png) -->
+    <section class="section-card" id="about">
+      <div class="about-grid">
+        <!-- Photo Column -->
+        <div class="photo-wrapper">
+          <div class="photo-frame">
+            <img src="assets/avatar.svg" alt="Profile Photo" class="profile-photo" id="profile-img">
+            <div class="photo-badge">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Description & Links Column -->
+        <div class="about-content">
+          <div class="section-tag" data-i18n="about_tag">Data Analyst Portfolio</div>
+          <h1 class="about-title" data-i18n="about_title">About</h1>
+          <p class="about-description" data-i18n="about_desc">
+            Passionate Data Analyst specialized in transforming complex raw data into actionable business intelligence. With deep expertise in statistical analysis, predictive modeling, and interactive dashboard design, I help organizations uncover trends, optimize processes, and make data-driven decisions that generate measurable business impact.
+          </p>
+
+          <!-- Social Links Row -->
+          <div class="about-social-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn linkedin-btn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+              <span class="social-label">LinkedIn</span>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn github-btn" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+              <span class="social-label">GitHub</span>
+            </a>
+            <a href="mailto:contact@dataanalyst.com" class="social-btn email-btn" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+              <span class="social-label">Email</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SKILLS (Matches 1.png) -->
+    <section class="section-card" id="skills">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="skills_title">Skills</h2>
+      </div>
+
+      <!-- Technical Skills Group -->
+      <div class="skills-group">
+        <h3 class="skills-subtitle">
+          <i class="fa-solid fa-laptop-code subtitle-icon"></i>
+          <span data-i18n="skills_technical_title">Technical Skills</span>
+        </h3>
+        <div class="skills-grid">
+          <!-- Python -->
+          <div class="skill-card">
+            <div class="skill-icon-box python-icon">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">Python</span>
+              <span class="skill-category" data-i18n="skill_python_cat">Pandas, NumPy, Scikit-learn</span>
+            </div>
+          </div>
+
+          <!-- Excel -->
+          <div class="skill-card">
+            <div class="skill-icon-box excel-icon">
+              <i class="fa-solid fa-file-excel"></i>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">Excel</span>
+              <span class="skill-category" data-i18n="skill_excel_cat">Power Query, Pivot Tables, VBA</span>
+            </div>
+          </div>
+
+          <!-- SQL -->
+          <div class="skill-card">
+            <div class="skill-icon-box sql-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">SQL</span>
+              <span class="skill-category" data-i18n="skill_sql_cat">PostgreSQL, MySQL, BigQuery</span>
+            </div>
+          </div>
+
+          <!-- Power BI -->
+          <div class="skill-card">
+            <div class="skill-icon-box powerbi-icon">
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">Power BI</span>
+              <span class="skill-category" data-i18n="skill_powerbi_cat">DAX, Data Modeling, Dashboards</span>
+            </div>
+          </div>
+
+          <!-- Tableau -->
+          <div class="skill-card">
+            <div class="skill-icon-box tableau-icon">
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">Tableau</span>
+              <span class="skill-category" data-i18n="skill_tableau_cat">Visual Analytics, Storytelling</span>
+            </div>
+          </div>
+
+          <!-- R -->
+          <div class="skill-card">
+            <div class="skill-icon-box r-icon">
+              <i class="fa-brands fa-r-project"></i>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">R</span>
+              <span class="skill-category" data-i18n="skill_r_cat">Statistical Computing, ggplot2</span>
+            </div>
+          </div>
+
+          <!-- ETL & Data Warehousing -->
+          <div class="skill-card">
+            <div class="skill-icon-box etl-icon">
+              <i class="fa-solid fa-diagram-project"></i>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name" data-i18n="skill_etl_name">ETL & Data Prep</span>
+              <span class="skill-category" data-i18n="skill_etl_cat">Pipelines, Data Cleaning, APIs</span>
+            </div>
+          </div>
+
+          <!-- Git & Version Control -->
+          <div class="skill-card">
+            <div class="skill-icon-box git-icon">
+              <i class="fa-brands fa-git-alt"></i>
+            </div>
+            <div class="skill-info">
+              <span class="skill-name">Git & GitHub</span>
+              <span class="skill-category" data-i18n="skill_git_cat">Version Control, CI/CD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages Group -->
+      <div class="skills-group">
+        <h3 class="skills-subtitle">
+          <i class="fa-solid fa-language subtitle-icon"></i>
+          <span data-i18n="skills_languages_title">Languages</span>
+        </h3>
+        <div class="languages-grid">
+          <!-- Spanish -->
+          <div class="language-card">
+            <div class="language-icon-box">
+              <span class="flag-icon">🇪🇸</span>
+            </div>
+            <div class="language-info">
+              <div class="language-title" data-i18n="lang_spanish_title">Spanish</div>
+              <div class="language-level" data-i18n="lang_spanish_level">Native</div>
+            </div>
+            <div class="language-badge native-badge" data-i18n="lang_badge_native">Native</div>
+          </div>
+
+          <!-- English -->
+          <div class="language-card">
+            <div class="language-icon-box">
+              <span class="flag-icon">🇬🇧</span>
+            </div>
+            <div class="language-info">
+              <div class="language-title" data-i18n="lang_english_title">English</div>
+              <div class="language-level" data-i18n="lang_english_level">B2 - Professional Working</div>
+            </div>
+            <div class="language-badge b2-badge">B2</div>
+          </div>
+
+          <!-- Mandarin Chinese -->
+          <div class="language-card">
+            <div class="language-icon-box">
+              <span class="flag-icon">🇨🇳</span>
+            </div>
+            <div class="language-info">
+              <div class="language-title" data-i18n="lang_chinese_title">Mandarin Chinese</div>
+              <div class="language-level" data-i18n="lang_chinese_level">HSK1 - Elementary</div>
+            </div>
+            <div class="language-badge hsk-badge">HSK1</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PROJECTS (Matches 2.png) -->
+    <section class="section-card" id="projects">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="projects_title">Projects</h2>
+      </div>
+
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-badge">Project 01</div>
+            <h3 class="project-name" data-i18n="p1_title">E-Commerce Customer Segmentation & Lifetime Value</h3>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Scikit-learn</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <ul class="project-bullets">
+              <li data-i18n="p1_b1">Extracted and cleaned over 350,000 transaction records using SQL queries and Python Pandas, identifying high-value buyer clusters.</li>
+              <li data-i18n="p1_b2">Implemented RFM (Recency, Frequency, Monetary) segmentation and K-Means clustering algorithm to classify customer churn risk.</li>
+              <li data-i18n="p1_b3">Built an automated interactive Power BI dashboard featuring dynamic retention cohorts, cohort LTV projections, and margin analysis.</li>
+              <li data-i18n="p1_b4">Delivered data-driven strategic recommendations that contributed to a 19% increase in targeted campaign click-through rates.</li>
+            </ul>
+          </div>
+
+          <div class="project-footer">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link repo-link">
+              <i class="fa-brands fa-github"></i>
+              <span data-i18n="project_link_repo">GitHub Repository</span>
+            </a>
+            <a href="https://powerbi.microsoft.com" target="_blank" rel="noopener noreferrer" class="project-link demo-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span data-i18n="project_link_demo">Live Dashboard</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-badge">Project 02</div>
+            <h3 class="project-name" data-i18n="p2_title">Financial Anomaly & Fraud Risk Detection Engine</h3>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">XGBoost</span>
+              <span class="tech-tag">Streamlit</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <ul class="project-bullets">
+              <li data-i18n="p2_b1">Engineered predictive data pipelines handling heavily skewed datasets with over 1.2 million credit card transactions.</li>
+              <li data-i18n="p2_b2">Applied SMOTE resampling techniques and trained gradient boosting models, reaching a 94.6% ROC-AUC score for fraud classification.</li>
+              <li data-i18n="p2_b3">Constructed automated outlier detection alerts that flag suspicious multi-country transfer behaviors in real time.</li>
+              <li data-i18n="p2_b4">Deployed a lightweight interactive web dashboard with Streamlit for compliance officers to inspect flagged accounts.</li>
+            </ul>
+          </div>
+
+          <div class="project-footer">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link repo-link">
+              <i class="fa-brands fa-github"></i>
+              <span data-i18n="project_link_repo">GitHub Repository</span>
+            </a>
+            <a href="https://streamlit.io" target="_blank" rel="noopener noreferrer" class="project-link demo-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span data-i18n="project_link_demo">Live Demo</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-badge">Project 03</div>
+            <h3 class="project-name" data-i18n="p3_title">Supply Chain Logistics & Inventory Optimization</h3>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Tableau</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Excel Power Query</span>
+              <span class="tech-tag">Time Series</span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <ul class="project-bullets">
+              <li data-i18n="p3_b1">Consolidated multi-warehouse operational data into a unified SQL star schema, eliminating data inconsistencies across 4 distribution hubs.</li>
+              <li data-i18n="p3_b2">Designed an executive Tableau suite monitoring lead time variances, safety stock thresholds, and supplier reliability ratings.</li>
+              <li data-i18n="p3_b3">Identified supply chain bottlenecks and seasonal demand spikes using time series forecasting models.</li>
+              <li data-i18n="p3_b4">Helped warehouse management reduce out-of-stock incidents by 14% and cut excess holding costs by $78,000 annually.</li>
+            </ul>
+          </div>
+
+          <div class="project-footer">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link repo-link">
+              <i class="fa-brands fa-github"></i>
+              <span data-i18n="project_link_repo">GitHub Repository</span>
+            </a>
+            <a href="https://public.tableau.com" target="_blank" rel="noopener noreferrer" class="project-link demo-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span data-i18n="project_link_demo">Tableau Public</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 4: WORK EXPERIENCE (Matches 2.png) -->
+    <section class="section-card" id="experience">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="experience_title">Work Experience</h2>
+      </div>
+
+      <!-- Timeline with vertical connecting line -->
+      <div class="timeline-wrapper">
+        <div class="timeline-vertical-line"></div>
+
+        <!-- Job 1 -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="experience-header">
+              <div class="experience-titles">
+                <h3 class="job-role" data-i18n="exp1_role">Senior Data Analyst</h3>
+                <span class="company-name" data-i18n="exp1_company">Nexus Analytics Solutions</span>
+              </div>
+              <div class="job-meta">
+                <span class="job-dates"><i class="fa-regular fa-calendar"></i> <span data-i18n="exp1_dates">2023 - Present</span></span>
+                <span class="job-location"><i class="fa-solid fa-location-dot"></i> <span data-i18n="exp1_loc">Remote</span></span>
+              </div>
+            </div>
+
+            <div class="experience-body">
+              <ul class="experience-bullets">
+                <li data-i18n="exp1_b1">Lead end-to-end data analytics lifecycle, architecting 15+ automated production dashboards in Power BI and Tableau for senior management.</li>
+                <li data-i18n="exp1_b2">Optimized complex SQL stored procedures and database indexation, cutting query execution time across massive datasets by 42%.</li>
+                <li data-i18n="exp1_b3">Partnered with cross-functional leadership to define strategic KPI frameworks that guide product development and revenue forecasting.</li>
+                <li data-i18n="exp1_b4">Mentored a team of 4 junior analysts on data storytelling, exploratory analysis in Python, and code review standards.</li>
+              </ul>
+            </div>
+
+            <div class="experience-tech-tags">
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Tableau</span>
+              <span class="tech-tag">ETL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="experience-header">
+              <div class="experience-titles">
+                <h3 class="job-role" data-i18n="exp2_role">Business Intelligence Analyst</h3>
+                <span class="company-name" data-i18n="exp2_company">Omni Retail Group</span>
+              </div>
+              <div class="job-meta">
+                <span class="job-dates"><i class="fa-regular fa-calendar"></i> <span data-i18n="exp2_dates">2021 - 2023</span></span>
+                <span class="job-location"><i class="fa-solid fa-location-dot"></i> <span data-i18n="exp2_loc">Hybrid</span></span>
+              </div>
+            </div>
+
+            <div class="experience-body">
+              <ul class="experience-bullets">
+                <li data-i18n="exp2_b1">Analyzed multi-channel customer journeys, sales funnels, and seasonal promotional performance using PostgreSQL and Excel.</li>
+                <li data-i18n="exp2_b2">Automated recurring weekly and monthly reporting pipelines using Python scripts and Power Query, eliminating ~15 hours of manual work per week.</li>
+                <li data-i18n="exp2_b3">Conducted A/B testing statistical analyses on pricing strategies, advising marketing teams on conversion optimization.</li>
+              </ul>
+            </div>
+
+            <div class="experience-tech-tags">
+              <span class="tech-tag">Excel VBA</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Data Modeling</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="experience-header">
+              <div class="experience-titles">
+                <h3 class="job-role" data-i18n="exp3_role">Junior Data Analyst</h3>
+                <span class="company-name" data-i18n="exp3_company">MetricPulse Consulting</span>
+              </div>
+              <div class="job-meta">
+                <span class="job-dates"><i class="fa-regular fa-calendar"></i> <span data-i18n="exp3_dates">2020 - 2021</span></span>
+                <span class="job-location"><i class="fa-solid fa-location-dot"></i> <span data-i18n="exp3_loc">On-site</span></span>
+              </div>
+            </div>
+
+            <div class="experience-body">
+              <ul class="experience-bullets">
+                <li data-i18n="exp3_b1">Supported data ingestion, cleansing, normalization, and QA audits across raw client datasets from diverse third-party sources.</li>
+                <li data-i18n="exp3_b2">Developed clean, intuitive summary reports and executive slide decks translating technical numbers into business takeaways.</li>
+                <li data-i18n="exp3_b3">Created and maintained the team's data dictionary documentation and SQL query repository for recurring reporting requests.</li>
+              </ul>
+            </div>
+
+            <div class="experience-tech-tags">
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Excel</span>
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Data QA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p class="footer-text">
+        &copy; <span id="current-year">2026</span> <span data-i18n="footer_rights">Data Analyst Portfolio. Designed for clarity & precision.</span>
+      </p>
+      <div class="footer-links">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <span class="footer-dot">•</span>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <span class="footer-dot">•</span>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <span class="footer-dot">•</span>
+        <a href="#experience" data-i18n="nav_experience">Work Experience</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

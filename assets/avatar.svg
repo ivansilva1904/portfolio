@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0b0f19"/>
+    </linearGradient>
+    <linearGradient id="primaryAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="glowEffect" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="300" rx="20" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Lines for Data Vibe -->
+  <path d="M 0 75 L 300 75 M 0 150 L 300 150 M 0 225 L 300 225" stroke="#334155" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.35"/>
+  <path d="M 75 0 L 75 300 M 150 0 L 150 300 M 225 0 L 225 300" stroke="#334155" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.35"/>
+  
+  <!-- Center Glow -->
+  <circle cx="150" cy="140" r="90" fill="url(#glowEffect)"/>
+
+  <!-- Stylized Person Avatar Silhouette -->
+  <!-- Head -->
+  <circle cx="150" cy="115" r="46" fill="#334155" stroke="url(#primaryAccent)" stroke-width="3"/>
+  <circle cx="150" cy="115" r="38" fill="#1e293b"/>
+  
+  <!-- Face Feature Accents (Minimalist / Glasses / Data Look) -->
+  <path d="M 132 112 Q 140 108 146 112" stroke="#38bdf8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 154 112 Q 160 108 168 112" stroke="#38bdf8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <line x1="146" y1="112" x2="154" y2="112" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Shoulders & Torso -->
+  <path d="M 85 240 C 85 185, 115 175, 150 175 C 185 175, 215 185, 215 240 Z" fill="#1e293b" stroke="url(#primaryAccent)" stroke-width="3"/>
+  <path d="M 125 178 L 150 215 L 175 178" stroke="#38bdf8" stroke-width="2.5" fill="none"/>
+
+  <!-- Data Graphic Floating Node -->
+  <circle cx="218" cy="85" r="16" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M 212 90 L 216 82 L 220 86 L 225 78" stroke="#38bdf8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="185" y1="95" x2="204" y2="89" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="2,2" opacity="0.6"/>
+
+  <circle cx="82" cy="90" r="14" fill="#0f172a" stroke="#818cf8" stroke-width="2"/>
+  <rect x="76" y="87" width="3" height="7" fill="#818cf8" rx="1"/>
+  <rect x="81" y="83" width="3" height="11" fill="#818cf8" rx="1"/>
+  <rect x="86" y="80" width="3" height="14" fill="#818cf8" rx="1"/>
+  <line x1="94" y1="94" x2="116" y2="102" stroke="#818cf8" stroke-width="1.2" stroke-dasharray="2,2" opacity="0.6"/>
+</svg>
