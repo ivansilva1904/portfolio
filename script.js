@@ -20,7 +20,7 @@ const translations = {
 
     // About
     about_title: "About",
-    about_desc: "Hi! I'm Ivan Silva, a <b>Data Analyst</b> from <b>Corrientes, Argentina</b> 🇦🇷. I enjoy working throughout the whole process of transforming plain data into actionable insights that help people to inform themselves better and take better decisions.",
+    about_desc: "Hi! I'm Ivan Silva, a <b>Data Analyst</b> from <b>Corrientes, Argentina</b> 🇦🇷. I enjoy working throughout the whole process of transforming plain data into actionable insights that help people stay informed and make better decisions.",
 
     // Skills
     skills_title: "Skills",
@@ -50,49 +50,36 @@ const translations = {
     project_link_demo: "Website",
 
     p1_title: "Suicidio en Datos",
-    p1_b1: "Analyzed 25+ years of public data on suicide in Argentina across many different characteristics of the problem.",
+    p1_b1: "Analyzed 25+ years of public data on suicide in Argentina across diverse dimensions of the issue.",
     p1_b2: "Cleaned nearly 200,000 records from three different Argentine government sources using Pandas.",
     p1_b3: "Built a full analysis of the data in a website using both Power BI and Tableau.",
 
     p2_title: "RFM Analysis on Online Retail",
-    p2_b1: "Cleaned more than 400,000 transaction records from the UCI 'Online Retail' repository and created a pipeline to calculate RFM variables using Pandas.",
-    p2_b2: "Segmentation of 4338 customers based in a K-means algorithm using Scikit-learn.",
+    p2_b1: "Cleaned more than 400,000 transactional records from the UCI 'Online Retail' repository and created a pipeline to calculate RFM metrics using Pandas.",
+    p2_b2: "Segmented 4,338 customers based on a K-means algorithm using Scikit-learn.",
     p2_b3: "Data visualization using Power BI for interactive dashboards and Matplotlib for static graphs.",
-    p2_b4: "Calculated churn rate of customers based in a recency criteria during 1 year period.",
+    p2_b4: "Calculated customers churn rate based on a recency threshold during a one-year period.",
 
-    p3_title: "Supply Chain Logistics & Inventory Optimization",
-    p3_b1: "Consolidated multi-warehouse operational data into a unified SQL star schema, eliminating data inconsistencies across 4 distribution hubs.",
-    p3_b2: "Designed an executive Tableau suite monitoring lead time variances, safety stock thresholds, and supplier reliability ratings.",
-    p3_b3: "Identified supply chain bottlenecks and seasonal demand spikes using time series forecasting models.",
-    p3_b4: "Helped warehouse management reduce out-of-stock incidents by 14% and cut excess holding costs by $78,000 annually.",
+    p3_title: "Cybersecurity Tendencies",
+    p3_b1: "Consolidated 5 years of public cybercrime data collected by the IC3 using Power Query.",
+    p3_b2: "Designed a dashboard in Power BI that showed the most significant crime trends.",
+
+    p4_title: "Olist Store Analysis (In progress)",
+    p4_b1: "Cleaned and restructured the data model using SQL in a PostgreSQL database.",
+    p4_b2: "Answered several business questions using SQL.",
 
     // Experience
     experience_title: "Work Experience",
 
-    exp1_role: "Senior Data Analyst",
-    exp1_company: "Nexus Analytics Solutions",
-    exp1_dates: "2023 - Present",
-    exp1_loc: "Remote",
-    exp1_b1: "Lead end-to-end data analytics lifecycle, architecting 15+ automated production dashboards in Power BI and Tableau for senior management.",
-    exp1_b2: "Optimized complex SQL stored procedures and database indexation, cutting query execution time across massive datasets by 42%.",
-    exp1_b3: "Partnered with cross-functional leadership to define strategic KPI frameworks that guide product development and revenue forecasting.",
-    exp1_b4: "Mentored a team of 4 junior analysts on data storytelling, exploratory analysis in Python, and code review standards.",
+    exp1_role: "Food Server",
+    exp1_company: "Dr. Jekyll & Mr. Hyde",
+    exp1_dates: "2020 - 2023",
+    exp1_loc: "On-site",
+    exp1_b1: "I worked as a food server for a restaurant with a capacity of over 100 people.",
 
-    exp2_role: "Business Intelligence Analyst",
-    exp2_company: "Omni Retail Group",
-    exp2_dates: "2021 - 2023",
-    exp2_loc: "Hybrid",
-    exp2_b1: "Analyzed multi-channel customer journeys, sales funnels, and seasonal promotional performance using PostgreSQL and Excel.",
-    exp2_b2: "Automated recurring weekly and monthly reporting pipelines using Python scripts and Power Query, eliminating ~15 hours of manual work per week.",
-    exp2_b3: "Conducted A/B testing statistical analyses on pricing strategies, advising marketing teams on conversion optimization.",
-
-    exp3_role: "Junior Data Analyst",
-    exp3_company: "MetricPulse Consulting",
-    exp3_dates: "2020 - 2021",
-    exp3_loc: "On-site",
-    exp3_b1: "Supported data ingestion, cleansing, normalization, and QA audits across raw client datasets from diverse third-party sources.",
-    exp3_b2: "Developed clean, intuitive summary reports and executive slide decks translating technical numbers into business takeaways.",
-    exp3_b3: "Created and maintained the team's data dictionary documentation and SQL query repository for recurring reporting requests.",
+    exp1_skill1: "Effective Communication",
+    exp1_skill2: "Multi-tasking",
+    exp1_skill3: "Cooperativeness",
 
     // Footer
     footer_rights: "Portfolio"
