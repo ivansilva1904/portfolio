@@ -25,7 +25,7 @@ const translations = {
     // Skills
     skills_title: "Skills",
     skills_technical_title: "Technical Skills",
-    skill_python_cat: "Pandas, NumPy, Scikit-learn",
+    skill_python_cat: "Pandas, NumPy, Scikit-learn, Matplotlib",
     skill_excel_cat: "Power Query, Pivot Tables",
     skill_sql_cat: "PostgreSQL, MySQL, SQL Server, Azure",
     skill_powerbi_cat: "Dashboards, DAX, Data Modeling",
@@ -47,19 +47,18 @@ const translations = {
     // Projects
     projects_title: "Projects",
     project_link_repo: "GitHub Repository",
-    project_link_demo: "Live Dashboard",
+    project_link_demo: "Website",
 
-    p1_title: "E-Commerce Customer Segmentation & Lifetime Value",
-    p1_b1: "Extracted and cleaned over 350,000 transaction records using SQL queries and Python Pandas, identifying high-value buyer clusters.",
-    p1_b2: "Implemented RFM (Recency, Frequency, Monetary) segmentation and K-Means clustering algorithm to classify customer churn risk.",
-    p1_b3: "Built an automated interactive Power BI dashboard featuring dynamic retention cohorts, cohort LTV projections, and margin analysis.",
-    p1_b4: "Delivered data-driven strategic recommendations that contributed to a 19% increase in targeted campaign click-through rates.",
+    p1_title: "Suicidio en Datos",
+    p1_b1: "Analyzed 25+ years of public data on suicide in Argentina across many different characteristics of the problem.",
+    p1_b2: "Cleaned nearly 200,000 records from three different Argentine government sources using Pandas.",
+    p1_b3: "Built a full analysis of the data in a website using both Power BI and Tableau.",
 
-    p2_title: "Financial Anomaly & Fraud Risk Detection Engine",
-    p2_b1: "Engineered predictive data pipelines handling heavily skewed datasets with over 1.2 million credit card transactions.",
-    p2_b2: "Applied SMOTE resampling techniques and trained gradient boosting models, reaching a 94.6% ROC-AUC score for fraud classification.",
-    p2_b3: "Constructed automated outlier detection alerts that flag suspicious multi-country transfer behaviors in real time.",
-    p2_b4: "Deployed a lightweight interactive web dashboard with Streamlit for compliance officers to inspect flagged accounts.",
+    p2_title: "RFM Analysis on Online Retail",
+    p2_b1: "Cleaned more than 400,000 transaction records from the UCI 'Online Retail' repository and created a pipeline to calculate RFM variables using Pandas.",
+    p2_b2: "Segmentation of 4338 customers based in a K-means algorithm using Scikit-learn.",
+    p2_b3: "Data visualization using Power BI for interactive dashboards and Matplotlib for static graphs.",
+    p2_b4: "Calculated churn rate of customers based in a recency criteria during 1 year period.",
 
     p3_title: "Supply Chain Logistics & Inventory Optimization",
     p3_b1: "Consolidated multi-warehouse operational data into a unified SQL star schema, eliminating data inconsistencies across 4 distribution hubs.",
@@ -113,7 +112,7 @@ const translations = {
     // Skills
     skills_title: "Habilidades",
     skills_technical_title: "Habilidades Técnicas",
-    skill_python_cat: "Pandas, NumPy, Scikit-learn",
+    skill_python_cat: "Pandas, NumPy, Scikit-learn, Matplotlib",
     skill_excel_cat: "Power Query, Tablas Dinámicas",
     skill_sql_cat: "PostgreSQL, MySQL, SQL Server, Azure",
     skill_powerbi_cat: "Tableros, DAX, Modelado de Datos",
@@ -135,7 +134,7 @@ const translations = {
     // Projects
     projects_title: "Proyectos",
     project_link_repo: "Repositorio GitHub",
-    project_link_demo: "Dashboard En Vivo",
+    project_link_demo: "Sitio web",
 
     p1_title: "Segmentación de Clientes y Valor del Ciclo de Vida (LTV) en E-Commerce",
     p1_b1: "Extracción y limpieza de más de 350.000 registros de transacciones mediante consultas SQL y Python Pandas, identificando grupos de compradores de alto valor.",
