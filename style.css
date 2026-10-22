@@ -409,6 +409,11 @@ body::before {
   margin-bottom: 1.85rem;
 }
 
+.about-description strong {
+  color: var(--text-main);
+  font-weight: 700;
+}
+
 /* Social buttons (LinkedIn, GitHub, Email) */
 .about-social-links {
   display: flex;
@@ -494,8 +499,8 @@ body::before {
 
 /* Skills Grid */
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.15rem;
 }
 
@@ -504,10 +509,12 @@ body::before {
   background: var(--bg-card-inner);
   border: var(--border-card);
   border-radius: var(--border-radius-md);
-  padding: 1.15rem;
+  padding: 1.15rem 1.4rem;
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex: 1 1 auto;
+  min-width: max-content;
   transition: all 0.25s ease;
   position: relative;
   overflow: hidden;
@@ -566,7 +573,6 @@ body::before {
 .skill-info {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .skill-name {
@@ -576,11 +582,9 @@ body::before {
 }
 
 .skill-category {
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 /* Languages Grid */
@@ -612,6 +616,22 @@ body::before {
 
 .language-icon-box {
   font-size: 2rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-text-pill {
+  font-family: var(--font-code);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--accent-cyan);
+  background: rgba(56, 189, 248, 0.1);
+  border: 1.5px solid rgba(56, 189, 248, 0.3);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--border-radius-sm);
+  display: inline-block;
   line-height: 1;
 }
 
@@ -1138,7 +1158,15 @@ body::before {
   }
 
   .skills-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .skill-card {
+    min-width: 100%;
+  }
+
+  .skill-category {
+    white-space: normal;
   }
 
   .languages-grid {

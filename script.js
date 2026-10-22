@@ -19,22 +19,21 @@ const translations = {
     nav_experience: "Work Experience",
 
     // About
-    about_tag: "Data Analyst Portfolio",
     about_title: "About",
-    about_desc: "Passionate Data Analyst specialized in transforming complex raw data into actionable business intelligence. With deep expertise in statistical analysis, predictive modeling, and interactive dashboard design, I help organizations uncover trends, optimize processes, and make data-driven decisions that generate measurable business impact.",
+    about_desc: "Hi! I'm Ivan Silva, a <b>Data Analyst</b> from <b>Corrientes, Argentina</b> 🇦🇷. I enjoy working throughout the whole process of transforming plain data into actionable insights that help people to inform themselves better and take better decisions.",
 
     // Skills
     skills_title: "Skills",
     skills_technical_title: "Technical Skills",
     skill_python_cat: "Pandas, NumPy, Scikit-learn",
-    skill_excel_cat: "Power Query, Pivot Tables, VBA",
-    skill_sql_cat: "PostgreSQL, MySQL, BigQuery",
-    skill_powerbi_cat: "DAX, Data Modeling, Dashboards",
-    skill_tableau_cat: "Visual Analytics, Storytelling",
+    skill_excel_cat: "Power Query, Pivot Tables",
+    skill_sql_cat: "PostgreSQL, MySQL, SQL Server, Azure",
+    skill_powerbi_cat: "Dashboards, DAX, Data Modeling",
+    skill_tableau_cat: "Dashboards, Data Modeling",
     skill_r_cat: "Statistical Computing, ggplot2",
     skill_etl_name: "ETL & Data Prep",
-    skill_etl_cat: "Pipelines, Data Cleaning, APIs",
-    skill_git_cat: "Version Control, CI/CD",
+    skill_etl_cat: "Pipelines, Data Cleaning",
+    skill_git_cat: "Version Control",
 
     skills_languages_title: "Languages",
     lang_spanish_title: "Spanish",
@@ -97,7 +96,7 @@ const translations = {
     exp3_b3: "Created and maintained the team's data dictionary documentation and SQL query repository for recurring reporting requests.",
 
     // Footer
-    footer_rights: "Data Analyst Portfolio. Designed for clarity & precision."
+    footer_rights: "Portfolio"
   },
 
   es: {
@@ -108,22 +107,21 @@ const translations = {
     nav_experience: "Experiencia Laboral",
 
     // About
-    about_tag: "Portfolio de Analista de Datos",
     about_title: "Sobre Mí",
-    about_desc: "Analista de Datos apasionado por convertir datos sin procesar en conocimiento estratégico accionable. Con amplia experiencia en análisis estadístico, modelos predictivos y diseño de paneles interactivos, ayudo a las organizaciones a detectar tendencias, optimizar procesos operativos y tomar decisiones basadas en datos con impacto directo en el negocio.",
+    about_desc: "¡Hola! Soy Ivan Silva, un <b>Data Analyst</b> de <b>Corrientes, Argentina</b> 🇦🇷. Disfruto trabajando a lo largo de todo el proceso de transformar datos sin procesar en conocimiento accionable que ayude a las personas a informarse mejor y tomar mejores decisiones.",
 
     // Skills
     skills_title: "Habilidades",
     skills_technical_title: "Habilidades Técnicas",
     skill_python_cat: "Pandas, NumPy, Scikit-learn",
-    skill_excel_cat: "Power Query, Tablas Dinámicas, VBA",
-    skill_sql_cat: "PostgreSQL, MySQL, BigQuery",
-    skill_powerbi_cat: "DAX, Modelado de Datos, Dashboards",
-    skill_tableau_cat: "Analítica Visual, Storytelling",
+    skill_excel_cat: "Power Query, Tablas Dinámicas",
+    skill_sql_cat: "PostgreSQL, MySQL, SQL Server, Azure",
+    skill_powerbi_cat: "Tableros, DAX, Modelado de Datos",
+    skill_tableau_cat: "Tableros, Modelado de Datos",
     skill_r_cat: "Cálculo Estadístico, ggplot2",
     skill_etl_name: "ETL y Prep de Datos",
-    skill_etl_cat: "Pipelines, Limpieza de Datos, APIs",
-    skill_git_cat: "Control de Versiones, CI/CD",
+    skill_etl_cat: "Pipelines, Limpieza de Datos",
+    skill_git_cat: "Control de Versiones",
 
     skills_languages_title: "Idiomas",
     lang_spanish_title: "Español",
@@ -186,7 +184,7 @@ const translations = {
     exp3_b3: "Mantenimiento del diccionario de datos corporativo y del repositorio de consultas SQL optimizadas para peticiones analíticas recurrentes.",
 
     // Footer
-    footer_rights: "Portfolio de Analista de Datos. Diseñado para claridad y precisión."
+    footer_rights: "Portfolio"
   }
 };
 
@@ -241,12 +239,12 @@ function setLanguage(lang) {
   localStorage.setItem("preferred_lang", lang);
   document.documentElement.setAttribute("lang", lang);
 
-  // Update text of all data-i18n elements
+  // Update text/html of all data-i18n elements
   const elements = document.querySelectorAll("[data-i18n]");
   elements.forEach((el) => {
     const key = el.getAttribute("data-i18n");
     if (translations[lang][key]) {
-      el.textContent = translations[lang][key];
+      el.innerHTML = translations[lang][key];
     }
   });
 
