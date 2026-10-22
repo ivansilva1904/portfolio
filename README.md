@@ -54,35 +54,3 @@ portfolio/
 └── README.md          # Guía de uso y personalización
 ```
 
----
-
-## 🛠️ Cómo Personalizar tu Información
-
-1. **Tu Foto de Perfil**:
-   - Guarda tu foto dentro de la carpeta `assets/` (por ejemplo `assets/mi-foto.jpg`).
-   - En `index.html`, busca la línea:
-     ```html
-     <img src="assets/avatar.svg" alt="Profile Photo" class="profile-photo" id="profile-img">
-     ```
-   - Reemplázala por:
-     ```html
-     <img src="assets/mi-foto.jpg" alt="Profile Photo" class="profile-photo" id="profile-img">
-     ```
-
-2. **Tus Redes Sociales y Correo**:
-   - En `index.html`, busca la clase `.about-social-links` y actualiza los atributos `href`:
-     - LinkedIn: `href="https://linkedin.com/in/tu-usuario"`
-     - GitHub: `href="https://github.com/tu-usuario"`
-     - Email: `href="mailto:tu-correo@gmail.com"`
-
-3. **Modificar o Agregar Textos y Traducciones**:
-   - Los textos del sitio se gestionan tanto en `index.html` (para la carga inicial en inglés) como en el objeto `translations` dentro de `script.js` (para las versiones en inglés y español).
-   - Puedes editar fácilmente las descripciones, proyectos y experiencias en `script.js` para mantener sincronizados ambos idiomas.
-
----
-
-## 🌐 Cómo Abrir el Sitio
-
-No necesitas instalar servidores ni herramientas adicionales:
-- Haz doble clic en el archivo `index.html` para abrirlo directamente en tu navegador web preferido (Chrome, Edge, Firefox, Safari).
-- Si usas VS Code, también puedes hacer clic derecho en `index.html` y seleccionar **"Open with Live Server"**.
