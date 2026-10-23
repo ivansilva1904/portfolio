@@ -94,7 +94,7 @@ const translations = {
 
     // About
     about_title: "Sobre Mí",
-    about_desc: "¡Hola! Soy Ivan Silva, un <b>Data Analyst</b> de <b>Corrientes, Argentina</b> 🇦🇷. Disfruto trabajando a lo largo de todo el proceso de transformar datos sin procesar en conocimiento accionable que ayude a las personas a informarse mejor y tomar mejores decisiones.",
+    about_desc: "¡Hola! Soy Ivan Silva, un <b>Data Analyst</b> de <b>Corrientes, Argentina</b> 🇦🇷. Disfruto trabajar a lo largo de todo el proceso de transformar datos simples en información procesable que ayude a las personas a mantenerse informadas y tomar mejores decisiones.",
 
     // Skills
     skills_title: "Habilidades",
@@ -102,8 +102,8 @@ const translations = {
     skill_python_cat: "Pandas, NumPy, Scikit-learn, Matplotlib",
     skill_excel_cat: "Power Query, Tablas Dinámicas",
     skill_sql_cat: "PostgreSQL, MySQL, SQL Server, Azure",
-    skill_powerbi_cat: "Tableros, DAX, Modelado de Datos",
-    skill_tableau_cat: "Tableros, Modelado de Datos",
+    skill_powerbi_cat: "Dashboards, DAX, Modelado de Datos",
+    skill_tableau_cat: "Dashboards, Modelado de Datos",
     skill_r_cat: "Cálculo Estadístico, ggplot2",
     skill_etl_name: "ETL y Prep de Datos",
     skill_etl_cat: "Pipelines, Limpieza de Datos",
@@ -121,53 +121,39 @@ const translations = {
     // Projects
     projects_title: "Proyectos",
     project_link_repo: "Repositorio GitHub",
-    project_link_demo: "Sitio web",
+    project_link_demo: "Sitio Web",
 
-    p1_title: "Segmentación de Clientes y Valor del Ciclo de Vida (LTV) en E-Commerce",
-    p1_b1: "Extracción y limpieza de más de 350.000 registros de transacciones mediante consultas SQL y Python Pandas, identificando grupos de compradores de alto valor.",
-    p1_b2: "Implementación de modelos RFM (Recencia, Frecuencia, Monetario) y algoritmo de clustering K-Means para clasificar el riesgo de abandono de clientes (churn).",
-    p1_b3: "Diseño de un dashboard interactivo automatizado en Power BI con cohortes de retención dinámica, proyecciones de LTV y análisis de rentabilidad.",
-    p1_b4: "Entrega de recomendaciones estratégicas basadas en datos que generaron un aumento del 19% en la tasa de clics de campañas personalizadas.",
+    p1_title: "Suicidio en Datos",
+    p1_b1: "Análisis de más de 25 años de datos públicos sobre el suicidio en Argentina a través de diversas dimensiones de la problemática.",
+    p1_b2: "Limpieza de casi 200.000 registros de tres fuentes oficiales del gobierno argentino utilizando Pandas.",
+    p1_b3: "Desarrollo de un análisis integral de los datos en un sitio web interactivo utilizando Power BI y Tableau.",
 
-    p2_title: "Motor de Detección de Anomalías y Riesgo de Fraude Financiero",
-    p2_b1: "Construcción de pipelines predictivos sobre datasets altamente desbalanceados de más de 1.2 millones de transacciones con tarjeta de crédito.",
-    p2_b2: "Aplicación de técnicas de remuestreo SMOTE y entrenamiento de modelos Gradient Boosting, alcanzando un puntaje ROC-AUC del 94.6% en clasificación de fraude.",
-    p2_b3: "Configuración de alertas automatizadas de detección de anomalías para identificar comportamientos sospechosos entre múltiples países en tiempo real.",
-    p2_b4: "Despliegue de una interfaz web interactiva y ligera en Streamlit para facilitar la auditoría visual por parte de los oficiales de cumplimiento.",
+    p2_title: "Análisis RFM en Online Retail",
+    p2_b1: "Limpieza de más de 400.000 registros transaccionales del repositorio 'Online Retail' de UCI y creación de un pipeline para calcular métricas RFM utilizando Pandas.",
+    p2_b2: "Segmentación de 4.338 clientes basada en el algoritmo K-means utilizando Scikit-learn.",
+    p2_b3: "Visualización de datos con Power BI para dashboards interactivos y Matplotlib para gráficos estáticos.",
+    p2_b4: "Cálculo de la tasa de abandono de clientes (churn rate) basada en un umbral de recencia durante un período de un año.",
 
-    p3_title: "Optimización de Inventario y Logística en Cadena de Suministro",
-    p3_b1: "Consolidación de datos operacionales de múltiples almacenes en un modelo en estrella SQL unificado, eliminando discrepancias entre 4 centros de distribución.",
-    p3_b2: "Diseño de suite ejecutiva en Tableau para monitorear variaciones en tiempos de entrega (lead times), niveles de stock de seguridad y fiabilidad de proveedores.",
-    p3_b3: "Identificación de cuellos de botella en la distribución y picos estacionales de demanda mediante modelos de pronóstico en series temporales.",
-    p3_b4: "Asesoramiento que permitió reducir los quiebres de stock en un 14% y ahorrar $78.000 USD anuales en costos de almacenamiento innecesario.",
+    p3_title: "Tendencias en Ciberseguridad",
+    p3_b1: "Consolidación de 5 años de datos públicos de ciberdelincuencia recopilados por el IC3 utilizando Power Query.",
+    p3_b2: "Diseño de un dashboard en Power BI que muestra las tendencias delictivas más significativas.",
+
+    p4_title: "Análisis de Tienda Olist (En progreso)",
+    p4_b1: "Limpieza y reestructuración del modelo de datos mediante SQL en una base de datos PostgreSQL.",
+    p4_b2: "Resolución de diversas preguntas de negocio clave mediante consultas SQL.",
 
     // Experience
     experience_title: "Experiencia Laboral",
 
-    exp1_role: "Analista de Datos Senior",
-    exp1_company: "Nexus Analytics Solutions",
-    exp1_dates: "2023 - Presente",
-    exp1_loc: "Remoto",
-    exp1_b1: "Liderazgo del ciclo de vida integral de analítica, diseñando más de 15 dashboards de producción en Power BI y Tableau para la alta gerencia.",
-    exp1_b2: "Optimización de procedimientos almacenados SQL e indexación de bases de datos, reduciendo los tiempos de consulta en grandes volúmenes en un 42%.",
-    exp1_b3: "Colaboración directa con directores de área para definir marcos estratégicos de KPIs que guían el desarrollo de productos y proyecciones de ingresos.",
-    exp1_b4: "Mentoría activa a un equipo de 4 analistas junior en storytelling con datos, análisis exploratorio en Python y estándares de revisión de código.",
+    exp1_role: "Mozo",
+    exp1_company: "Dr. Jekyll & Mr. Hyde",
+    exp1_dates: "2020 - 2023",
+    exp1_loc: "Presencial",
+    exp1_b1: "Trabajé como mozo en un restaurante con una capacidad de más de 100 personas.",
 
-    exp2_role: "Analista de Business Intelligence",
-    exp2_company: "Omni Retail Group",
-    exp2_dates: "2021 - 2023",
-    exp2_loc: "Híbrido",
-    exp2_b1: "Análisis del funnel de ventas omnicanal, comportamiento de consumidores y efectividad de promociones de temporada usando PostgreSQL y Excel.",
-    exp2_b2: "Automatización de flujos de reportes semanales y mensuales con scripts de Python y Power Query, ahorrando cerca de 15 horas semanales de trabajo manual.",
-    exp2_b3: "Ejecución de análisis estadísticos de pruebas A/B sobre estrategias de precios, asesorando al equipo comercial en optimización de conversión.",
-
-    exp3_role: "Analista de Datos Junior",
-    exp3_company: "MetricPulse Consulting",
-    exp3_dates: "2020 - 2021",
-    exp3_loc: "Presencial",
-    exp3_b1: "Soporte en ingesta, limpieza, normalización y auditorías de calidad (QA) sobre conjuntos de datos en bruto de diversas fuentes de clientes.",
-    exp3_b2: "Creación de reportes claros y presentaciones ejecutivas traduciendo métricas técnicas en conclusiones comprensibles para perfiles no técnicos.",
-    exp3_b3: "Mantenimiento del diccionario de datos corporativo y del repositorio de consultas SQL optimizadas para peticiones analíticas recurrentes.",
+    exp1_skill1: "Comunicación Efectiva",
+    exp1_skill2: "Multitarea",
+    exp1_skill3: "Trabajo en Equipo",
 
     // Footer
     footer_rights: "Portfolio"
